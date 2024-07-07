@@ -1,0 +1,21 @@
+<header class="header">
+    <div class="header__nav">
+        <a routerLink="/home" class="header__nav-home">
+            <div class="header__nav-brand">
+                <img src="assets/icon.jpg" alt="Logo" class="header__nav-icon">
+                <span class="header__nav-name">
+                    <span class="header__nav-name-text">Alans Čertkojevs</span>
+                    <img src="assets/verification.png" alt="verification" class="header__nav-name-verification">
+                </span>
+            </div>
+        </a>
+        <ul class="header__nav-list">
+            <li class="header__nav-item" *ngFor="let link of navLinks">
+                <a routerLink="{{ link.route }}" routerLinkActive="active" ariaCurrentWhenActive="page"
+                    class="header__nav-link selectable">
+                    {{ link.name }}
+                </a>
+            </li>
+        </ul>
+    </div>
+</header>
