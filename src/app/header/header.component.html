@@ -1,15 +1,20 @@
 <header class="header">
     <div class="header__nav">
-        <a routerLink="/home" class="header__nav-home">
-            <div class="header__nav-brand">
-                <img src="assets/icon.jpg" alt="Logo" class="header__nav-icon">
-                <span class="header__nav-name">
-                    <span class="header__nav-name-text">Alans Čertkojevs</span>
-                    <img src="assets/verification.png" alt="verification" class="header__nav-name-verification">
-                </span>
-            </div>
-        </a>
-        <ul class="header__nav-list">
+        <div class="header__nav--container">
+            <a routerLink="/home" class="header__nav-home">
+                <div class="header__nav-brand">
+                    <img src="assets/icon.jpg" alt="Logo" class="header__nav-icon">
+                    <span class="header__nav-name">
+                        <span class="header__nav-name-text">Alans Čertkojevs</span>
+                        <img src="assets/verification.png" alt="verification" class="header__nav-name-verification">
+                    </span>
+                </div>
+            </a>
+            <button class="header__nav-toggle" (click)="toggleDropdown()">
+                <img src="assets/hamburger.png" alt="menu" class="header__nav-toggle-image">
+            </button>
+        </div>
+        <ul class="header__nav-list" [class.open]="isDropdownOpen">
             <li class="header__nav-item" *ngFor="let link of navLinks">
                 <a routerLink="{{ link.route }}" routerLinkActive="active" ariaCurrentWhenActive="page"
                     class="header__nav-link selectable">
