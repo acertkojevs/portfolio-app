@@ -66,10 +66,11 @@
             border-radius: 50%;
             align-items: center;
             justify-content: center;
-            background-color: #AC87C5;
+            background: linear-gradient(to left, #AC87C5 50%, #FFE5E5 50%) right;
+            background-size: 200%;
+            transition: .3s ease;
 
             &-image {
-
                 width: 24px;
                 height: 24px;
             }
@@ -156,6 +157,10 @@
 
         &-toggle {
             display: flex;
+        }
+
+        &-toggle:hover {
+            background-position: left;
         }
 
         &-list {
