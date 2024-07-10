@@ -4,10 +4,12 @@
             <a routerLink="/home" class="header__nav-home">
                 <div class="header__nav-brand">
                     <img src="assets/icon.jpg" alt="Logo" class="header__nav-icon">
-                    <span class="header__nav-name">
-                        <span class="header__nav-name-text">Alans Čertkojevs</span>
-                        <img src="assets/verification.png" alt="verification" class="header__nav-name-verification">
-                    </span>
+                    <a routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page">
+                        <span class="header__nav-name">
+                            <span class="header__nav-name-text">Alans Čertkojevs</span>
+                            <img src="assets/verification.png" alt="verification" class="header__nav-name-verification">
+                        </span>
+                    </a>
                 </div>
             </a>
             <button class="header__nav-toggle" (click)="toggleDropdown()">

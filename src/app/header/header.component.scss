@@ -29,6 +29,10 @@
             display: flex;
             align-items: center;
             gap: 16px;
+
+            &:hover .header__nav-name-text {
+                color: #ff1447;
+            }
         }
 
         &-icon {
@@ -78,7 +82,7 @@
         &-dropdown {
             display: none;
             position: absolute;
-            top: 100%; // Position the dropdown below the toggle button
+            top: 100%;
             left: 0;
             background-color: #120421;
             box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
@@ -87,7 +91,7 @@
             width: 100%;
 
             &.open {
-                display: block; // Show the dropdown when 'open' class is applied
+                display: block;
             }
         }
 
