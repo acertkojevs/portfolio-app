@@ -1,0 +1,29 @@
+.footer {
+    background-color: #120421;
+    margin-top: auto;
+    width: 100%;
+    padding: 10px 0;
+    border-top: 4px solid black;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+
+    &__name {
+        text-decoration: underline;
+        color: white;
+    }
+
+    &__bottom {
+        &-text {
+            color: white;
+            font-size: 18px;
+            font-family: 'Roboto Slab';
+        }
+    }
+
+    &__social-icons {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+}
