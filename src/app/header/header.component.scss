@@ -33,6 +33,10 @@
             &:hover .header__nav-name-text {
                 color: #ff1447;
             }
+
+            &--link {
+                text-decoration: none;
+            }
         }
 
         &-icon {
@@ -53,6 +57,7 @@
                 color: white;
                 font-size: 20px;
                 font-family: 'Roboto Slab';
+                text-decoration: none;
             }
 
             &-verification {
