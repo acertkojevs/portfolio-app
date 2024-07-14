@@ -16,6 +16,31 @@
         </div>
         <div class="main__container-projects">
             <h2 class="main__container-projects-heading">Featured Projects</h2>
+            <div class="main__container-projects-list">
+                <!-- <div class="main__container-projects-item" style="background-image: url('assets/sslv.png');">
+                    <h3 class="main__container-projects-item-title">SS.LV Auto WebScapper</h3>
+                    <p class="main__container-projects-item-description"> A web scraper script which automatically
+                        extract cars data from SS.LV website, capturing cars details like year, model, price and exports
+                        it to
+                        CSV.</p>
+                </div> -->
+                <div class="main__container-projects-item" *ngFor="let project of projects">
+                    <div class="main__container-projects-item-overlay"
+                        [ngStyle]="{ 'background-image': 'url(' + project.imageUrl + ')'}"></div>
+                    <h3 class="main__container-projects-item-title">{{ project.title }}</h3>
+                    <p class="main__container-projects-item-description">
+                        {{ project.description }}
+                    </p>
+                </div>
+
+            </div>
+            <p class="main__container-projects-footer">
+                <a routerLink="/projects" class="main__container-projects-footer__see-all">See All Projects
+                    <span class="main__container-projects-footer__icon">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </span>
+                </a>
+            </p>
         </div>
     </div>
 </main>
