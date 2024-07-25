@@ -30,7 +30,8 @@
             gap: 16px;
 
             &:hover .header__nav-name-text {
-                color: #ff1447;
+                color: #9156c4;
+                box-shadow: inset 0 -1.25em 0 0 #fff;
             }
 
             &--link {
@@ -115,13 +116,10 @@
                 transform: scaleY(0);
                 max-height: 0;
                 transform-origin: top;
-                margin: 0px;
                 margin-top: 10px;
-
                 transition: opacity 0.5s ease, transform 0.5s ease, visibility 0.5s ease, max-height 1s ease;
 
                 &.open {
-                    margin: 0;
                     overflow: visible;
                     opacity: 1;
                     visibility: visible;
