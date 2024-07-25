@@ -16,10 +16,10 @@ export class HomeComponent {
       description: 'A web scraper to automatically extract and update automotive listings from the SS.LV website, capturing details like make, model, year, and price and exports it to CSV.',
       imageUrl: 'assets/sslv.png'
     },
-    {
-      title: 'Project Title 2',
-      description: 'Brief description of the project goes here.',
-      imageUrl: 'path/to/unique-image2.jpg'
-    },
+    // {
+    //   title: 'Project Title 2',
+    //   description: 'Brief description of the project goes here.',
+    //   imageUrl: 'path/to/unique-image2.jpg'
+    // },
   ];
 }
