@@ -14,8 +14,8 @@
                 </div>
             </a>
             <button class="header__nav-toggle" (click)="toggleDropdown()">
-                <img *ngIf="!isDropdownOpen" src="assets/hamburger.png" alt="menu" class="header__nav-toggle-image">
-                <img *ngIf="isDropdownOpen" src="assets/close.png" alt="close" class="header__nav-toggle-image">
+                <i *ngIf="!isDropdownOpen" class="fa-solid fa-bars fa-xl" style="color: #000000;"></i>
+                <i *ngIf="isDropdownOpen" class="fa-solid fa-xmark fa-2xl" style="color: #000000;"></i>
             </button>
         </div>
         <ul class="header__nav-list" [class.open]="isDropdownOpen">

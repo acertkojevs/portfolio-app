@@ -1,9 +1,8 @@
 .header {
     background-color: #120421;
-    // background-color: rgb(209, 164, 164);
     margin-top: auto;
     width: 100%;
-    padding: 20px 0;
+    padding-top: 20px;
 
     &__nav {
         display: flex;
@@ -107,6 +106,29 @@
             gap: 40px;
             margin: 16px;
             padding: 0;
+
+            @media (max-width: 768px) {
+                flex-direction: column;
+                opacity: 0;
+                overflow: hidden;
+                visibility: hidden;
+                transform: scaleY(0);
+                max-height: 0;
+                transform-origin: top;
+                margin: 0px;
+                margin-top: 10px;
+
+                transition: opacity 0.5s ease, transform 0.5s ease, visibility 0.5s ease, max-height 1s ease;
+
+                &.open {
+                    margin: 0;
+                    overflow: visible;
+                    opacity: 1;
+                    visibility: visible;
+                    transform: scaleY(1);
+                    max-height: 500px;
+                }
+            }
         }
 
         &-link {
@@ -169,18 +191,6 @@
 
         &-toggle:hover {
             background-position: left;
-        }
-
-        &-list {
-            display: none;
-
-            &.open {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                margin-top: 20px;
-                gap: 25px;
-            }
         }
     }
 }
