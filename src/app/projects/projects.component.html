@@ -1,0 +1,13 @@
+<section class="projects">
+    <div class="projects--container">
+        <h1 class="projects__main--title">Projects</h1>
+        <article *ngFor="let project of paginatedProjects" class="projects--item">
+            <h1 class="projects--title"><a [routerLink]="project.url">{{ project.title }}</a></h1>
+            <p class="projects--date">{{ project.date }}</p>
+            <p class="projects--text">{{ project.text }}</p>
+        </article>
+        <app-pagination [projectCount]="totalItems" [itemsPerPage]="itemsPerPage" [currentPage]="currentPage"
+            (pageChanged)="onPageChange($event)">
+        </app-pagination>
+    </div>
+</section>
