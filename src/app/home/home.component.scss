@@ -14,7 +14,7 @@
             padding: 70px 0;
 
             @media (max-width: 768px) {
-                padding: 30px 0;
+                padding: 15px 0;
             }
         }
 
@@ -45,12 +45,22 @@
             margin-bottom: 0px;
             font-family: "Roboto Sans";
             color: white;
+
+            @media (max-width: 768px) {
+                font-size: 50px;
+            }
         }
 
         &-content-text {
             font-size: 32px;
             font-family: "Roboto";
             color: white;
+            line-height: 1.5;
+            font-weight: 300;
+
+            @media (max-width: 768px) {
+                font-size: 22px;
+            }
         }
 
         &-projects {
@@ -60,6 +70,10 @@
                 font-size: 40px;
                 font-family: "Roboto Sans";
                 color: white;
+
+                @media (max-width: 768px) {
+                    font-size: 36px;
+                }
 
             }
 
@@ -126,6 +140,10 @@
                     font-family: "Roboto Sans";
                     z-index: 1;
                     position: relative;
+
+                    @media (max-width: 768px) {
+                        font-size: 22px;
+                    }
                 }
 
                 &-description {
@@ -136,9 +154,14 @@
                     font-family: "Roboto";
                     opacity: 0;
                     visibility: hidden;
-                    // transition: opacity 2s ease, visibility 2s ease;
                     font-weight: 300;
+
+                    @media (max-width: 768px) {
+                        font-size: 16px;
+                    }
                 }
+
+
             }
 
             @media (max-width: 1105px) {
