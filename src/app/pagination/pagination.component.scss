@@ -17,6 +17,10 @@
             background-size: 200%;
             transition: .3s ease;
 
+            @media (max-width: 768px) {
+                font-size: 12px;
+            }
+
             &:hover:not(:disabled) {
                 background-position: left;
             }

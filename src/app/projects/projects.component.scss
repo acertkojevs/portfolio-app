@@ -8,6 +8,11 @@
         flex-direction: column;
         max-width: 1200px;
         margin: 50px 0;
+
+        @media (max-width: 768px) {
+            width: 90%;
+            margin: 15px 0;
+        }
     }
 
     &--item {
@@ -24,6 +29,14 @@
         line-height: 2px;
         display: flex;
         justify-content: center;
+
+        @media (max-width: 768px) {
+            font-size: 42px;
+        }
+
+        @media (max-width: 450px) {
+            font-size: 28px;
+        }
     }
 
     &--title {
@@ -35,6 +48,14 @@
         color: #AC87C5;
         margin-bottom: 0;
         line-height: 1.65;
+
+        @media (max-width: 768px) {
+            font-size: 24px;
+        }
+
+        @media (max-width: 450px) {
+            font-size: 22px;
+        }
     }
 
     &--date {
@@ -43,6 +64,10 @@
         font-size: 16px;
         color: #6f767d;
         margin-top: 5px;
+
+        @media (max-width: 768px) {
+            font-size: 12px;
+        }
     }
 
     &--text {
@@ -51,6 +76,14 @@
         color: white;
         line-height: 1.65;
         letter-spacing: 0.5px;
+
+        @media (max-width: 768px) {
+            font-size: 18px;
+        }
+
+        @media (max-width: 450px) {
+            font-size: 16px;
+        }
     }
 }
 

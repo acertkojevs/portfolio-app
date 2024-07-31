@@ -29,6 +29,10 @@
             align-items: center;
             gap: 16px;
 
+            @media (max-width: 768px) {
+                gap: 8px;
+            }
+
             &:hover .header__nav-name-text {
                 color: #9156c4;
                 box-shadow: inset 0 -1.25em 0 0 #fff;
@@ -51,6 +55,7 @@
         &-name {
             display: flex;
             align-items: center;
+            // flex-wrap: wrap;
             gap: 4px;
 
             &-text {
@@ -58,6 +63,14 @@
                 font-size: 20px;
                 font-family: 'Roboto Slab';
                 text-decoration: none;
+                white-space: nowrap;
+                font-weight: bold;
+                /* Prevents the text from splitting */
+                overflow: hidden;
+
+                @media (max-width: 768px) {
+                    font-size: 16px;
+                }
             }
 
             &-verification {
@@ -66,6 +79,7 @@
         }
 
         &-toggle {
+            flex-shrink: 0;
             display: none;
             border: none;
             cursor: pointer;
@@ -134,9 +148,12 @@
             cursor: pointer;
             color: white;
             text-decoration: none;
-            font-size: 20px;
+            font-size: 16px;
             font-family: 'Roboto Slab';
             list-style-type: none;
+            font-weight: bold;
+            line-height: 1.65;
+            letter-spacing: 1px;
 
             &.selectable::after {
                 content: '';
