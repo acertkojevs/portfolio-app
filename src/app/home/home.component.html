@@ -18,12 +18,14 @@
             <h2 class="main__container-projects-heading">Featured Projects</h2>
             <div class="main__container-projects-list">
                 <div class="main__container-projects-item" *ngFor="let project of projects">
-                    <div class="main__container-projects-item-overlay"
-                        [ngStyle]="{ 'background-image': 'url(' + project.imageUrl + ')'}"></div>
-                    <h3 class="main__container-projects-item-title">{{ project.title }}</h3>
-                    <p class="main__container-projects-item-description">
-                        {{ project.description }}
-                    </p>
+                    <a [routerLink]="['/projects', project.urlName]" class="main__container-projects-item-link">
+                        <div class="main__container-projects-item-overlay"
+                            [ngStyle]="{ 'background-image': 'url(' + project.imageUrl + ')'}"></div>
+                        <h3 class="main__container-projects-item-title">{{ project.title }}</h3>
+                        <p class="main__container-projects-item-description">
+                            {{ project.description }}
+                        </p>
+                    </a>
                 </div>
             </div>
             <p class="main__container-projects-footer">

@@ -95,6 +95,12 @@
                 background-size: cover;
                 background-position: center;
 
+                &-link {
+                    &:active {
+                        text-decoration: none;
+                    }
+                }
+
                 &:before {
                     content: "";
                     position: absolute;
@@ -106,6 +112,8 @@
                     // filter: brightness(50%) blur(2px);
                     z-index: 0;
                     transition: filter 0.3s ease;
+
+
                 }
 
                 &-overlay {
@@ -200,3 +208,15 @@
         }
     }
 }
+
+// .main__container-projects-item-link {
+//     &:focus {
+//         outline: none; // Remove the default focus outline
+//     }
+
+//     &:active {
+//         // Remove any default styles applied when the link is actively being clicked
+//         color: white; // Ensure color does not change on click
+//         text-decoration: none;
+//     }
+// }
