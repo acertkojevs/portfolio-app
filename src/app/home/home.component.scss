@@ -109,7 +109,6 @@
                     width: 100%;
                     height: 100%;
                     background: inherit;
-                    // filter: brightness(50%) blur(2px);
                     z-index: 0;
                     transition: filter 0.3s ease;
 
@@ -131,7 +130,6 @@
                 &:hover {
                     transform: translateY(-10px);
                     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-                    // filter: brightness(70%) blur(2px);
 
                     .main__container-projects-item-description {
                         opacity: 1;
@@ -208,15 +206,3 @@
         }
     }
 }
-
-// .main__container-projects-item-link {
-//     &:focus {
-//         outline: none; // Remove the default focus outline
-//     }
-
-//     &:active {
-//         // Remove any default styles applied when the link is actively being clicked
-//         color: white; // Ensure color does not change on click
-//         text-decoration: none;
-//     }
-// }

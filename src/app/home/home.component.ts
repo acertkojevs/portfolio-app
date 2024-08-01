@@ -17,10 +17,5 @@ export class HomeComponent {
       imageUrl: 'assets/sslv.png',
       urlName: 'ss-lv-auto-webscraper'
     },
-    // {
-    //   title: 'Project Title 2',
-    //   description: 'Brief description of the project goes here.',
-    //   imageUrl: 'path/to/unique-image2.jpg'
-    // },
   ];
 }
