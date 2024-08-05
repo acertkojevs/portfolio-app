@@ -85,6 +85,7 @@
             }
 
             &-item {
+
                 position: relative;
                 overflow: hidden;
                 background-color: #1A1A1A;
@@ -96,9 +97,7 @@
                 background-position: center;
 
                 &-link {
-                    &:active {
-                        text-decoration: none;
-                    }
+                    text-decoration: none;
                 }
 
                 &:before {
