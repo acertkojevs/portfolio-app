@@ -235,10 +235,11 @@
 
         &--href {
             color: white;
-            display: flex;
+            display: inline-flex;
             align-items: center;
             gap: 10px;
             text-decoration: none;
+            width: fit-content;
         }
 
         &--text {
@@ -247,6 +248,7 @@
             color: #AC87C5;
             text-decoration: underline;
             letter-spacing: 0.5px;
+            display: inline-flex;
         }
 
         &--text:hover {
