@@ -179,15 +179,19 @@
                 display: flex;
                 justify-content: flex-end;
                 align-items: center;
-                font-size: 20px;
+                margin-top: 20px;
+
+                &__see-all {
+                    font-size: 20px;
+
+                    &:hover .fa-arrow-right {
+                        transform: translateX(10px);
+                        color: #9156c4;
+                    }
+                }
 
                 .fa-arrow-right {
                     transition: transform 0.3s ease;
-                }
-
-                &:hover .fa-arrow-right {
-                    transform: translateX(10px);
-                    color: #9156c4;
                 }
 
                 &__see-all {
