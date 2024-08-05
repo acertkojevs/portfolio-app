@@ -9,6 +9,6 @@ export const routes: Routes = [
     { path: 'home', component: HomeComponent },
     { path: 'projects', component: ProjectsComponent },
     { path: 'about', component: AboutComponent },
-    { path: 'projects/ss-lv-auto-webscraper', component: SsLvAutoWebscraperComponent },
+    { path: 'projects/ss-lv-car-webscraper', component: SsLvAutoWebscraperComponent },
     { path: '**', redirectTo: '/home', pathMatch: 'full' },
 ];

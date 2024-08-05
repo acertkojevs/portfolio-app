@@ -8,18 +8,36 @@
         flex-direction: column;
         max-width: 1200px;
         margin: 50px 0;
+
+        @media (max-width: 768px) {
+            width: 90%;
+            margin: 15px 0;
+            line-height: 1.4; // Adjust line height
+            letter-spacing: 1px;
+        }
     }
 
     &--title {
-        letter-spacing: 2px;
+        letter-spacing: 1px;
         font-family: "Roboto Sans";
         font-weight: bold;
         text-transform: uppercase;
-        font-size: 42px;
+        font-size: 32px;
         color: #AC87C5;
-        line-height: 2px;
-        display: flex;
-        justify-content: center;
+        margin-bottom: 0;
+        line-height: 1.65;
+        text-align: center;
+
+        // Media query for smaller screens
+        @media (max-width: 768px) {
+            font-size: 32px;
+            line-height: 1.4;
+        }
+
+        @media (max-width: 480px) {
+            font-size: 24px;
+            line-height: 1.6;
+        }
     }
 
     &--date {
