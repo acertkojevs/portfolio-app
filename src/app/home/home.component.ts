@@ -17,5 +17,11 @@ export class HomeComponent {
       imageUrl: 'assets/sslv.png',
       urlName: 'ss-lv-car-webscraper'
     },
+    {
+      title: 'RaveCulture.lv — all about EDM and Rave music.',
+      description: 'RaveCulture.lv is a website dedicated for rave and edm fans. It covers s everything from breaking news, highlights upcoming festivals, club nights, and rave events.',
+      imageUrl: 'assets/rave.png',
+      urlName: 'rave-culture-lv'
+    }
   ];
 }

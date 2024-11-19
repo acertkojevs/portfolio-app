@@ -13,7 +13,18 @@ import { RouterLink } from '@angular/router';
 })
 export class ProjectsComponent {
   projects: Project[] = [
-    { date: '2024-06-12', title: 'SS.LV Auto WebScraper', text: 'A web scraper to automatically extract and update automotive listings from the SS.LV website, capturing details like make, model, year, and price and exports it to CSV.', url: 'ss-lv-auto-webscraper' },
+    {
+      date: '2024-06-12',
+      title: 'SS.LV Auto WebScraper',
+      text: 'A web scraper to automatically extract and update automotive listings from the SS.LV website, capturing details like make, model, year, and price and exports it to CSV.',
+      url: 'ss-lv-car-webscraper'
+    },
+    {
+      date: '2024-11-19',
+      title: 'RaveCulture.lv — all about EDM and Rave music.',
+      text: 'RaveCulture.lv is a website dedicated for rave and edm fans. It covers s everything from breaking news, highlights upcoming festivals, club nights, and rave events.',
+      url: 'rave-culture-lv'
+    }
   ];
 
 

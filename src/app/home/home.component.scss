@@ -110,8 +110,10 @@
                     background: inherit;
                     z-index: 0;
                     transition: filter 0.3s ease;
+                }
 
-
+                &:hover .main__container-projects-item-overlay {
+                    filter: blur(8px);
                 }
 
                 &-overlay {
@@ -167,8 +169,6 @@
                         visibility: visible;
                     }
                 }
-
-
             }
 
             @media (max-width: 1105px) {
